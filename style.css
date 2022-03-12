@@ -1,11 +1,17 @@
-body {
+body.menu_principal {
     background-image: url('img/3 pokemons.jpg');
     background-repeat:no-repeat;
     background-position: center center;
 }
 
-body.Pagina3 {
+body.pagina_login {
     background-image: url('img/best-teams-pokemon.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding-bottom: 20%;
+}
+body.transacciones {
+    background-image: url('img/Pikachu Amarillo.jpg');
     background-repeat:no-repeat;
     background-position: center center;
     padding-bottom: 20%;
@@ -28,4 +34,8 @@ label.form-label{
 div.form-text{
     text-align: center;
     color: aliceblue;
+}
+
+table.table{
+    color: blueviolet;
 }
