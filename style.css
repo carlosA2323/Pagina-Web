@@ -1,5 +1,27 @@
 body {
-    background-image: url('img/Pikachu pokemon.jpg');
+    background-image: url('img/3 pokemons.jpg');
     background-repeat:no-repeat;
     background-position: center center;
+}
+
+body.Pagina3 {
+    background-image: url('img/best-teams-pokemon.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding-bottom: 20%;
+}
+
+h1.login_titulo {
+    text-align: center;
+    color: aliceblue;
+}
+
+label.form-label{
+    text-align: center;
+    color: aliceblue;
+}
+
+div.form-text{
+    text-align: center;
+    color: aliceblue;
 }
