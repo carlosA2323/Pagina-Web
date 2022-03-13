@@ -11,7 +11,7 @@ body.pagina_login {
     padding-bottom: 20%;
 }
 body.transacciones {
-    background-image: url('img/Pikachu Amarillo.jpg');
+    background-image: url('img/jiglipuff.png');
     background-repeat:no-repeat;
     background-position: center center;
     padding-bottom: 20%;
@@ -51,5 +51,9 @@ div.login_button{
     color: blue;
 }
 
-
+div.grafico_barras{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
 

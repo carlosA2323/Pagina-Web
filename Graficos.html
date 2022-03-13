@@ -7,36 +7,73 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<!--https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!--
+https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
 </head>
+
 <body class="graficos">
-<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+  <a type="button" class="btn btn-outline-warning" href="Login.html">Finalizar</a>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+                <!--Transacciones-->
+                    <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
 
-<script>
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+                    <script>
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Contry', 'Mhl'],
-  ['Italy',55],
-  ['France',49],
-  ['Spain',44],
-  ['USA',24],
-  ['Argentina',15]
-]);
+                    function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Transacción', 'Gasto del Mes'],
+                      ['Retiro',425],
+                      ['Pago NPE',80],
+                      ['Deposito',700]
+                    ]);
 
-var options = {
-  title:'World Wide Wine Production',
-  backgroundColor: { fill:'transparent' }
-};
+                    var options = {
+                      title:'Tipo de transacción',
+                      backgroundColor: { fill:'transparent' }
+                    };
 
-var chart = new google.visualization.BarChart(document.getElementById('myChart'));
-  chart.draw(data, options);
-}
-</script>
+                    var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+                      chart.draw(data, options);
+                    }
+                    </script>
+          </div>
+          <div class="col">
+                      <!--Cargos y abonos-->
+                      <div id="myChart2" style="width:100%; max-width:600px; height:500px;"></div>
+
+                      <script>
+                      google.charts.load('current', {'packages':['corechart']});
+                      google.charts.setOnLoadCallback(drawChart);
+
+                      function drawChart() {
+                      var data = google.visualization.arrayToDataTable([
+                        ['Concepto', 'Movimiento'],
+                        ['Cargos',505],
+                        ['Abonos',700],
+                        
+                      ]);
+
+                      var options = {
+                        title:'Tipo de transacción',
+                        backgroundColor: { fill:'transparent' }
+                      };
+
+                      var chart = new google.visualization.BarChart(document.getElementById('myChart2'));
+                        chart.draw(data, options);
+                      }
+                      </script>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+
 
 </body>
 </html>
