@@ -16,6 +16,12 @@ body.transacciones {
     background-position: center center;
     padding-bottom: 20%;
 }
+body.graficos {
+    background-image: url('img/Blastoise.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding-bottom: 20%;
+}
 
 h1.login_titulo {
     text-align: center;
@@ -39,3 +45,5 @@ div.form-text{
 table.table{
     color: blueviolet;
 }
+
+
