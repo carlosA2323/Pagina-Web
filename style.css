@@ -42,8 +42,14 @@ div.form-text{
     color: aliceblue;
 }
 
-table.table{
-    color: blueviolet;
+div.login_button{
+    text-align: center;
 }
+
+#login_button {
+    background-color: yellow;
+    color: blue;
+}
+
 
 
