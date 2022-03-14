@@ -17,8 +17,8 @@ body.transacciones {
     padding-bottom: 20%;
 }
 body.graficos {
-    background-image: url('img/Blastoise.jpg');
-    background-repeat:no-repeat;
+    background-image: url('img/Pokemons\ Colores.jfif');
+    background-repeat:repeat;
     background-position: center center;
     padding-bottom: 20%;
 }
@@ -30,6 +30,11 @@ h1.login_titulo {
 h1.EECC {
     text-align: center;
     color: green;
+}
+
+h1.graficos{
+    text-align: center;
+    color: black;
 }
 
 label.form-label{

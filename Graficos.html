@@ -7,13 +7,15 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Gráficos</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!--
 https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
 </head>
 
 <body class="graficos">
-  <a type="button" class="btn btn-outline-warning" href="Login.html">Finalizar</a>
+  <a type="button" class="btn btn-outline-warning" href="Login.html" id="login_button">Finalizar</a>
+  <h1 class="graficos">Gráficos de transacciones</h1>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -33,8 +35,7 @@ https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
                     ]);
 
                     var options = {
-                      title:'Tipo de transacción',
-                      backgroundColor: { fill:'transparent' }
+                      title:'Tipo de transacción'
                     };
 
                     var chart = new google.visualization.BarChart(document.getElementById('myChart'));
@@ -59,8 +60,7 @@ https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
                       ]);
 
                       var options = {
-                        title:'Tipo de transacción',
-                        backgroundColor: { fill:'transparent' }
+                        title:'Movimientos acumulados'
                       };
 
                       var chart = new google.visualization.BarChart(document.getElementById('myChart2'));
@@ -68,7 +68,9 @@ https://www.w3schools.com/js/tryit.asp?filename=tryai_google_chart_bar-->
                       }
                       </script>
           </div>
+              <!--backgroundColor: { fill:'transparent' }-->
         </div>
+
     </div>
   </div>
 
